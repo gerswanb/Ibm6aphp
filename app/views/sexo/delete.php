@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elininar Sexo</title>
+    <title>Elininar listas de Sexo</title>
 </head>
 <body>
 
-<h1>Editar el Sexo</h1>
+<h1>Editar las listas de Sexo</h1>
 <form action="/sexo/public/sexo/delete" method="POST">
     <input type="hidden" name="id" value="<?php echo htmlspecialchars($sexo['id']); ?>">
     
     <label for="nombre">Nombre:</label>
+    <label for= "apellido">Apellido</label>    
     <input type="text" name="nombre" id="nombre" value="<?php echo htmlspecialchars($sexo['nombre']); ?>" required>
     
     <input type="submit" value="Eliminar">
